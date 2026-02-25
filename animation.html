@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+        }
+        div:hover{
+            animation-name: ani;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+            animation-delay: 3s;
+            animation-direction: alternate;
+        }
+        @keyframes ani {
+            0%{
+                height: 400px;
+                width: 300px;
+                background-color: red;
+            }
+            25%{
+                background-color: goldenrod;
+                height: 100vh;
+                width: 100vw;
+            }
+            50%{
+                background-color: blue;
+                border-radius: 50%;
+            }
+            100%{
+                background-color: black;
+                border-radius: 10%;
+
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    
+</body>
+</html>
