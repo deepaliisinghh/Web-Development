@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background: linear-gradient(red,blue);
+            border-radius: 55%;
+            border: 10px solid black;
+            position: relative;
+            margin: 0px auto;
+            animation-name: ani;
+            animation-duration: 900ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+        }
+        @keyframes ani {
+            0%{
+                transform: translateX(600px);
+            }
+            100%{
+                transform: translateY(75vh) rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
